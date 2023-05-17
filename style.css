@@ -30,7 +30,7 @@ nav h1 {
 /* Container */
 
 .hvadkanvi-container {
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
     margin-top: 15vh;
     height: 60vh;
     display: flex;
@@ -40,12 +40,23 @@ nav h1 {
 }
 
 .hvadkanvi {
-    border: 1px solid #ccc;
+    border: 3px solid black;
     width: calc(33.33% - 60px);
     height: calc(50% - 60px);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    overflow: auto;
 }
 
-.hvadkanvi:hover {
-    transform: scale(1.1);
+.hvadkanvi p {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hvadkanvi {
+        display: block;
+        height: 400px;
+        width: 80%;
+        padding: auto;
+        margin-bottom: 30px;
+    }
 }
